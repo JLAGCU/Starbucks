@@ -138,9 +138,7 @@
   ```
   DELETE /api/products/2
   ```
-- **Sample Response (Deleted)**
-
-:
+- **Sample Response (Deleted)**:
   ```
   Product deleted successfully.
   ```
