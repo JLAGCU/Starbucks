@@ -1,6 +1,3 @@
-# Starbucks
- CST-391 Milestone
-
 # Starbucks Product Management API Documentation
 
 ## Introduction
