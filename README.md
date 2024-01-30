@@ -30,8 +30,7 @@
         "price": "1.00",
         "category": "Bakery",
         "createdAt": "2024-01-30T05:14:46.000Z"
-    },
-    // ...
+    }
   ]
   ```
 
@@ -72,9 +71,8 @@
 - **Response**:
   - Status Code: `201 Created`
   - JSON object representing the created product.
-- **Sample Request**:
+- **Sample Request**:   POST /api/products
   ```json
-  POST /api/products
   {
   "name": "Chocolate Cake Pop",
   "description": "Bite-sized chocolate cake mixed with chocolate buttercream, dipped in chocolaty icing and topped with white sprinkles.",
@@ -103,9 +101,8 @@
 - **Response**:
   - Status Code: `200 OK` if updated, `404 Not Found` if not found.
   - JSON object representing the updated product.
-- **Sample Request**:
+- **Sample Request**:   PUT /api/products/2
   ```json
-  PUT /api/products/2
   {
     "name": "Chocolate Cake Pop (50% OFF)",
     "description": "Bite-sized chocolate cake mixed with chocolate buttercream, dipped in chocolaty icing and topped with white sprinkles.",
