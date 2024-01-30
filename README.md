@@ -71,7 +71,8 @@
 - **Response**:
   - Status Code: `201 Created`
   - JSON object representing the created product.
-- **Sample Request**:   POST /api/products
+- **Sample Request**:
+```POST /api/products```
   ```json
   {
   "name": "Chocolate Cake Pop",
@@ -101,7 +102,8 @@
 - **Response**:
   - Status Code: `200 OK` if updated, `404 Not Found` if not found.
   - JSON object representing the updated product.
-- **Sample Request**:   PUT /api/products/2
+- **Sample Request**:
+```PUT /api/products/2```
   ```json
   {
     "name": "Chocolate Cake Pop (50% OFF)",
