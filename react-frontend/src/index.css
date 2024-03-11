@@ -1,0 +1,169 @@
+/* Reset basic elements */
+body,
+h1,
+h2,
+h3,
+p,
+form,
+input,
+button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic styling */
+body {
+  font-family: "Helvetica", sans-serif;
+  background-color: #f8f8f8;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Content container */
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hover-text:hover {
+  color: #006241;
+  cursor: pointer;
+}
+
+
+/* Navbar */
+.navbar a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px;
+  display: inline-block;
+}
+
+.navbar-logo {
+  height: 50px;
+  margin-right: 10px;
+}
+
+/* Product cards container */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: -10px;
+}
+
+/* Product card */
+.product-card {
+  border: 1px solid #1e3932;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #fff;
+  width: calc(25% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.product-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  font-size: 0.9rem;
+  margin-bottom: 8px;
+}
+
+/* Card actions */
+.product-card a {
+  padding: 8px 16px;
+  background-color: #1e3932;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.product-card a:hover {
+  background-color: #006241;
+}
+
+/* Form styles */
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+input[type="text"],
+input[type="number"],
+textarea {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+/* Button styles */
+input[type="submit"],
+button {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #1e3932;
+  border: none;
+  color: white;
+  border-radius: 4px;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #006241;
+}
+
+.delete-btn {
+  padding: 8px 16px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.delete-btn:hover {
+  background-color: darkred;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: calc(100% - 20px);
+  }
+}
